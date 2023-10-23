@@ -1,7 +1,11 @@
+import { HeadFC, PageProps, graphql } from 'gatsby';
 import * as React from 'react';
-import { HeadFC, PageProps, Link, graphql, useStaticQuery } from 'gatsby';
-import '../styles/recipes.css';
 import RecipeItem from '../components/recipe-item';
+import SearchBox from '../components/search-box';
+import '../styles/index.css';
+import '../styles/recipes.css';
+import { StaticImage } from 'gatsby-plugin-image';
+
 const IndexPage: React.FC<PageProps> = props => {
   const { allContentfulRecipe, allContentfulAsset }: any = props.data;
   const { edges } = allContentfulRecipe;
@@ -15,8 +19,19 @@ const IndexPage: React.FC<PageProps> = props => {
     };
   });
   return (
-    <main>
-      <div>
+    <>
+      <header>
+        <a href="/" title="Return to the homepage" id="logo">
+          <StaticImage
+            id="logo"
+            height={130}
+            src="../images/logo-with-text.png"
+            alt="Best For You logo"
+          />
+        </a>
+      </header>
+      <main>
+        <SearchBox></SearchBox>
         <ul className="recipe-list">
           {recipes.map(rcp => (
             <li
@@ -28,8 +43,9 @@ const IndexPage: React.FC<PageProps> = props => {
             </li>
           ))}
         </ul>
-      </div>
-    </main>
+      </main>
+      <footer>Best For You Organics, Co.</footer>
+    </>
   );
 };
 
