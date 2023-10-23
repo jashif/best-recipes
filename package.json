@@ -1,0 +1,47 @@
+{
+  "name": "best-recipes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "best-recipes",
+  "author": "Jashif",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "setup": "node ./scripts/setup.js",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "export-content": "contentful space export --space-id=$SPACE_ID --management-token=$MANAGEMENT_TOKEN --export-dir=scripts --content-file=data-export.json"
+  },
+  "dependencies": {
+    "gatsby": "^5.12.4",
+    "gatsby-plugin-image": "^3.12.1",
+    "gatsby-plugin-manifest": "^4.6.0",
+    "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby-plugin-sharp": "^5.12.1",
+    "gatsby-plugin-styled-components": "^6.12.0",
+    "gatsby-plugin-vanilla-extract": "^4.0.1",
+    "gatsby-source-contentful": "^8.12.2",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.1.0",
+    "react-redux": "^8.0.4",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "babel-plugin-styled-components": "^2.1.4",
+    "dotenv": "^8.2.0",
+    "typescript": "^5.1.6",
+    "contentful-import": "^9.4.2"
+  }
+}
