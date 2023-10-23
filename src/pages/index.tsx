@@ -24,6 +24,7 @@ const IndexPage: React.FC<PageProps> = props => {
         <a href="/" title="Return to the homepage" id="logo">
           <StaticImage
             id="logo"
+            objectFit={'contain'}
             height={130}
             src="../images/logo-with-text.png"
             alt="Best For You logo"
