@@ -1,6 +1,7 @@
 import React from 'react';
 import * as CLayer from 'commercelayer-react';
 import '../styles/shopping.css';
+import Checkout from './checkout';
 const ShoppingBag = ({ open, close, lang }: any) => {
   return !lang ? null : (
     <div id="shopping-bag" className={open ? 'open' : ''}>
@@ -51,7 +52,7 @@ const ShoppingBag = ({ open, close, lang }: any) => {
             </a>
           </div>
           <div className="column">
-            <CLayer.Checkout className={'button is-fullwidth is-success'} />
+            <Checkout className={'button is-fullwidth is-success'} />
           </div>
         </div>
       </div>

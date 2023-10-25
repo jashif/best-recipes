@@ -1,15 +1,15 @@
-import React from "react";
-import { Provider } from "react-redux";
+import React from 'react';
+import { Provider } from 'react-redux';
 
-import createStore from "./src/store/createStore";
+import createStore from './src/store/createStore';
 
-import { ThemeProvider } from "./src/context/ThemeContext";
+import { OrderProvider } from './src/context/OrderContext';
 
 export default ({ element }) => {
   const store = createStore();
   return (
     <Provider store={store}>
-      <ThemeProvider>{element}</ThemeProvider>
+      <OrderProvider>{element}</OrderProvider>
     </Provider>
   );
 };

@@ -27,6 +27,10 @@ const Layout = ({ children, shoppingBagStatus, setShoppingBagStatus }: any) => {
         marketId={'12545'}
         countryCode={'US'}
         languageCode={'en'}
+        cartUrl="https://wishkart.commercelayer.app/checkout"
+        returnUrl="https://contentful-gatsby-demo.netlify.com/"
+        privacyUrl="https://contentful-gatsby-demo.netlify.com/"
+        termsUrl="https://contentful-gatsby-demo.netlify.com/"
       />
     </React.Fragment>
   );
