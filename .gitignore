@@ -8,3 +8,5 @@ src/gatsby-types.d.ts
 .contentfulrc
 
 .commercelayer-cli.yml
+
+.env

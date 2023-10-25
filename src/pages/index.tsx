@@ -4,7 +4,6 @@ import RecipeItem from '../components/recipe-item';
 import SearchBox from '../components/search-box';
 import '../styles/index.css';
 import '../styles/recipes.css';
-import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
 import useShoppingBag from '../hooks';
 

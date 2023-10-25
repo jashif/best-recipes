@@ -27,10 +27,6 @@ const Layout = ({ children, shoppingBagStatus, setShoppingBagStatus }: any) => {
         marketId={'12545'}
         countryCode={'US'}
         languageCode={'en'}
-        cartUrl="https://lucky-tulumba-3141ea.netlify.app/"
-        returnUrl="https://lucky-tulumba-3141ea.netlify.app/"
-        privacyUrl="https://lucky-tulumba-3141ea.netlify.app/"
-        termsUrl="https://lucky-tulumba-3141ea.netlify.app/"
       />
     </React.Fragment>
   );
