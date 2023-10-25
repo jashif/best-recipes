@@ -1,0 +1,7 @@
+.cart-badge {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background: red;
+  z-index: 100;
+}

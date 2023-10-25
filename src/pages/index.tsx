@@ -5,6 +5,8 @@ import SearchBox from '../components/search-box';
 import '../styles/index.css';
 import '../styles/recipes.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import Layout from '../components/layout';
+import useShoppingBag from '../hooks';
 
 const IndexPage: React.FC<PageProps> = props => {
   const { allContentfulRecipe, allContentfulAsset }: any = props.data;
@@ -18,19 +20,9 @@ const IndexPage: React.FC<PageProps> = props => {
       imageUrl: image && image.node.url,
     };
   });
+  const [status, setStatus] = useShoppingBag();
   return (
-    <>
-      <header>
-        <a href="/" title="Return to the homepage" id="logo">
-          <StaticImage
-            id="logo"
-            objectFit={'contain'}
-            height={130}
-            src="../images/logo-with-text.png"
-            alt="Best For You logo"
-          />
-        </a>
-      </header>
+    <Layout shoppingBagStatus={status} setShoppingBagStatus={setStatus}>
       <main>
         <SearchBox></SearchBox>
         <ul className="recipe-list">
@@ -46,7 +38,7 @@ const IndexPage: React.FC<PageProps> = props => {
         </ul>
       </main>
       <footer>Best For You Organics, Co.</footer>
-    </>
+    </Layout>
   );
 };
 

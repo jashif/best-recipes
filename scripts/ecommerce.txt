@@ -1,0 +1,10 @@
+npm install -g @commercelayer/cli
+
+commercelayer app:login -i UzHVt770fWsxBGCuuJnjN_O2ijZ70QzGCGA0_mZj3Ik -s 2ATTMcVoElj4-dCug6_aDnK3r5YPQH60aXAUFZZTMo8 -o wishkart -a admin
+
+
+commercelayer plugins:install seeder
+
+commercelayer seed
+
+commercelayer-seeder -i UzHVt770fWsxBGCuuJnjN_O2ijZ70QzGCGA0_mZj3Ik -s 2ATTMcVoElj4-dCug6_aDnK3r5YPQH60aXAUFZZTMo8 -e https://wishkart.commercelayer.io

@@ -1,0 +1,141 @@
+a {
+  color: #1b3d76;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding: calc(0.5em - 1px) 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button.is-fullwidth {
+  display: flex;
+  width: 100%;
+}
+.button.is-success {
+  background-color: #48c774;
+  border-color: transparent;
+  color: #fff;
+}
+
+.has-text-success {
+  color: #38a75efc !important;
+}
+
+.has-text-grey-light {
+  color: #929297 !important;
+}
+
+#add-to-bag {
+  background: #2c844afc;
+  color: #ffffff;
+}
+
+#contentful-logo {
+  width: 110px;
+}
+#commercelayer-logo {
+  width: 150px;
+}
+.navbar-brand .icon {
+  margin: 0 5px;
+}
+#country-selector {
+  margin-bottom: 40px;
+}
+.category-listing {
+  margin-top: 10px;
+  padding: 40px;
+}
+
+.amount {
+  font-weight: bold;
+}
+.compare-at-amount {
+  text-decoration: line-through;
+}
+.large {
+  font-size: 1.5rem;
+}
+.variant-select-wrap {
+  margin-top: 0.7em;
+}
+.add-to-bag,
+.available-message,
+.unavailable-message,
+#availability-message {
+  margin-top: 1.3em;
+}
+.available-message,
+.unavailable-message {
+  display: none;
+}
+#shopping-bag {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 29; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #fafafa; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-left: 1px solid #eee;
+}
+#shopping-bag.open {
+  width: 500px;
+}
+.shopping-bag-content {
+  width: 500px;
+  padding: 20px 40px;
+  overflow-x: hidden;
+}
+.shopping-bag-col {
+  font-size: 0.8rem;
+}
+.shopping-bag-col-image img {
+  width: 80px;
+  border: 1px solid #eee;
+}
+.shopping-bag-unavailable-message {
+  display: none;
+  margin-bottom: 10px;
+}
+#shopping-bag-preview-total {
+  text-align: right;
+  font-weight: bold;
+}
+#shopping-bag-table {
+  background-color: #fafafa; /* Black*/
+}
+#shopping-bag-table td {
+  border: none;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#main {
+  transition: opacity 0.5s;
+  min-height: 72vh;
+}
+#main.open {
+  opacity: 0.3;
+}
+.description {
+  margin-bottom: 1.5rem;
+}
+.column.is-one-quarter > .box {
+  padding: 0.45rem;
+}
+
+.dropdown-disabled::after {
+  display: none !important;
+}

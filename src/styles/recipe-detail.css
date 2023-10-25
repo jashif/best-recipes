@@ -4,6 +4,31 @@
   color: #435869;
   text-decoration: none;
 }
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#add-to-bag {
+  background: #2c844afc;
+  color: #ffffff;
+}
+.add-button {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.amount {
+  font-weight: bold;
+}
+.compare-at-amount {
+  text-decoration: line-through;
+}
+.large {
+  font-size: 1.5rem;
+}
 
 .source-and-servings {
   text-align: center;

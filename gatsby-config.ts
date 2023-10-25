@@ -26,11 +26,18 @@ const config: GatsbyConfig = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
-      },
+        name: `Best Recipes`,
+        short_name: `Recipes`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `src/images/logo.png` // This path is relative to the root of the site.
+      }
     },
+    `gatsby-plugin-commercelayer`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
